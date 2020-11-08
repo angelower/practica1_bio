@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="icon" href="image/logo.jpg">
+        <title>Formulario de ingreso</title>
+    </head>
+    <body>
+        <main>
+           <div class="content-menu">
+           <input type="checkbox" id="check">
+           <img src="image/icono.png" width="20px" class="img-icono">
+           <label for="check" class="icon-menu">Menú</label>
+           <h2>Hopital Bio-IS</h2>
+           <img src="image/logo.jpg" class="img-logo">
+           <br>
+           <nav class="menu">
+               <ul>
+                   <li><a href="ingreso.html">Ingreso HCE</a></li>
+                   <li><a href="consulta.html">Consulta HDE</a></li>
+                   <li>Agenda Médica</li>
+                   <li>Laboratorio</li>
+                   <li>Imágenes</li>
+                   <li>Factración</li>
+                   <li>Admisión</li>
+                   <li>Gestión de Calidad</li>
+                   <li>Conozcanos</li>
+               </ul>
+           </nav>
+       </div>
+       <div class="content-all">
+           <br><br>
+           <form action="registro.php" method="post" class="form-hce">
+        <h1 class="form__titulo">Historia Clínica Electrónica</h1>
+        <br>
+        <div class="contenedor-inputs">
+           
+            <h3 class="form__subtitulo">Datos básicos del paciente</h3>
+            <input type="text" name="id" placeholder="Documento de identidad" class="input-33">
+            <input type="text" name="nombre" placeholder="Nombres" class="input-100">
+            <input type="text" name="apellido" placeholder="Apellidos" class="input-100">
+            <select name="genero" >
+                <option value="0">Seleccione...</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+            </select>
+            <input type="text" name="edad" placeholder="Edad en años" class="input-33">
+            <input type="text" name="fr" placeholder="Frec. Cardiaca" class="input-33">
+            <input type="text" name="ps" placeholder="Presión Sistólica" class="input-33">
+            <input type="text" name="pd" placeholder="Presión Diastólica" class="input-33">
+            <input type="text" name="talla" placeholder="Estatura" class="input-33">
+            <input type="text" name="peso" placeholder="Peso" class="input-33"> 
+            <input type="text" name="SO2" placeholder="Saturación de O2" class="input-33">
+        </div>
+        <br>
+        <div class="contenedor-antecedentes">
+            <h3 class="form__subtitulo">Antecedentes</h3>
+            <label class="label-antecedentes"><input type="checkbox" name="chol" id="chol" value="chol">Colesterol Alto</label>
+            <label class="label-antecedentes"><input type="checkbox" name="dia" id="dia" value="dia">Diabetes</label>
+            <label class="label-antecedentes"><input type="checkbox" name="trig" id="trig" value="trig">Triglicéridos</label>
+            <label class="label-antecedentes"><input type="checkbox" name="cancer" id="cancer" value="cancer">Cáncer</label>
+            <label class="label-antecedentes"><input type="checkbox" name="renal" id="renal" value="renal">Insuficiencia Renal</label>
+        </div>
+        <br>
+        <div class="contenedor-rh">
+            <h3 class="form__subtitulo">Tipo de Sangre</h3>
+            <label><input type="radio" id="ts" name="ts" value="A">A</label>
+            <label><input type="radio" id="ts" name="ts" value="B">B</label>
+            <label><input type="radio" id="ts" name="ts" value="O">O</label>
+            <label><input type="radio" id="ts" name="ts" value="AB">AB</label><br>
+            <label><input type="radio" id="rh" name="rh" value="Pos">Positivo (+)</label>
+            <label><input type="radio" id="rh" name="rh" value="Neg">Negativo (-)</label><br>
+        </div>
+        
+        <div class="contenedor-btn">
+            <input type="reset" name="borrar" value="Borrar" class="input-btn">
+            <input type="submit" name="guardar" value="Guardar" class="input-btn">
+            <input type="button" name="salir" value="Salir" class="input-btn">
+        </div>
+    </form>
+    <footer>
+        <a href="#">www.hopital-bio-is.com.co</a> Teléfono: 123456789 correo: hopital-bio-is@udea.edu.co
+    </footer>
+       </div>
+   </main>
+    
+</body>
+</html>
